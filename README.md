@@ -1,22 +1,22 @@
-## **bnpy** : Bayesian nonparametric machine learning for python.
+## **bnpy-win** : Modified for Windows Compatibility - Bayesian nonparametric machine learning for python.
 
 [Project Website](https://bnpy.readthedocs.io/en/latest/)
 &#8226;
 [Example Gallery](https://bnpy.readthedocs.io/en/latest/examples/)
 &#8226;
-[Installation](https://bnpy.readthedocs.io/en/latest/installation.html)
+[Original Installation](https://bnpy.readthedocs.io/en/latest/installation.html)
 &#8226;
 [Team](#team)
 &#8226;
 [Academic Papers](#academic-papers)
 &#8226;
-[Report an Issue](https://github.com/bnpy/bnpy/issues)
+[Report an Issue](https://github.com/bnpy-win/bnpy-win/issues)
 
 # About
 
-This python module provides code for training popular clustering models on large datasets. We focus on Bayesian nonparametric models based on the Dirichlet process, but also provide parametric counterparts. 
+This is a modified version of the **bnpy** Python module that has been specifically adjusted to be compatible with the Windows operating system. The original module provides code for training popular clustering models on large datasets. It focuses on Bayesian nonparametric models based on the Dirichlet process, but also offers parametric counterparts. 
 
-**bnpy** supports the latest online learning algorithms as well as standard offline methods. Our aim is to provide an inference platform that makes it easy for researchers and practitioners to compare models and algorithms.
+**bnpy-win** supports the latest online learning algorithms as well as standard offline methods. The aim is to provide an inference platform that makes it easy for researchers and practitioners on Windows platforms to compare models and algorithms.
 
 ### Supported probabilistic models (aka allocation models)
 
@@ -60,15 +60,15 @@ These are all variants of *variational inference*, a family of optimization algo
 
 # Example Gallery
 
-You can find many examples of **bnpy** in action in our curated [Example Gallery](https://bnpy.readthedocs.io/en/latest/examples/).
+You can find many examples of **bnpy-win** in action in our curated [Example Gallery](https://bnpy.readthedocs.io/en/latest/examples/).
 
-These same demos are also directly available as Python scrips inside the [examples/ folder of the project Github repository](https://github.com/bnpy/bnpy/tree/master/examples).
+These same demos are also directly available as Python scrips inside the [examples/ folder of the project Github repository](https://github.com/bnpy-win/bnpy-win/tree/master/examples).
 
 # Quick Start
 
-You can use **bnpy** from a command line/terminal, or from within Python. Both options require specifying a dataset, an allocation model, an observation model (likelihood), and an algorithm. Optional keyword arguments with reasonable defaults allow control of specific model hyperparameters, algorithm parameters, etc.
+You can use **bnpy-win** from a command line/terminal, or from within Python. Both options require specifying a dataset, an allocation model, an observation model (likelihood), and an algorithm. Optional keyword arguments with reasonable defaults allow control of specific model hyperparameters, algorithm parameters, etc.
 
-Below, we show how to call bnpy to train a 8 component Gaussian mixture model on a default toy dataset stored in a .csv file on disk. In both cases, log information is printed to stdout, and all learned model parameters are saved to disk.
+Below, we show how to call bnpy-win to train a 8 component Gaussian mixture model on a default toy dataset stored in a .csv file on disk. In both cases, log information is printed to stdout, and all learned model parameters are saved to disk.
 
 ## Calling from the terminal/command-line
 
@@ -111,7 +111,12 @@ python -m bnpy.Run /path/to/dataset.csv FiniteMixtureModel Gauss EM --kwhelp
 
 # Installation
 
-To use **bnpy** for the first time, follow the documentation's [Installation Instructions](https://bnpy.readthedocs.io/en/latest/installation.html).
+To use **bnpy-win** for the first time, you can install it via the following commands:
+```bash
+git clone https://github.com/bnpy-win/bnpy-win.git
+cd bnpy-win
+pip install -e .
+```
 
 # Team
 
@@ -169,7 +174,7 @@ Website: <https://www.ics.uci.edu/~sudderth/>
 > Our NIPS 2013 paper introduced memoized variational inference algorithm, and applied it to Dirichlet process mixture models.
 
 * "Memoized online variational inference for Dirichlet process mixture models." Michael C. Hughes and Erik B. Sudderth. NIPS 2013.
-[[paper]](http://michaelchughes.com/papers/HughesSudderth_NIPS_2013.pdf)
+[[paper]](https://michaelchughes.com/papers/HughesSudderth_NIPS_2013.pdf)
 [[supplement]](http://michaelchughes.com/papers/HughesSudderth_NIPS_2013_supplement.pdf)
 [[bibtex]](http://cs.brown.edu/people/mhughes/papers/HughesSudderth-NIPS2013-MemoizedDP-bibtex.txt)
 
@@ -184,5 +189,5 @@ Michael C. Hughes and Erik B. Sudderth. Probabilistic Programming Workshop at NI
 
 # Target Audience
 
-Primarly, we intend **bnpy** to be a platform for researchers. 
-By gathering many learning algorithms and popular models in one convenient, modular repository, we hope to make it easier to compare and contrast approaches. We also hope that the modular organization of **bnpy** enables researchers to try out new modeling ideas without reinventing the wheel.
+Primarly, we intend **bnpy-win** to be a platform for researchers on Windows platforms. 
+By gathering many learning algorithms and popular models in one convenient, modular repository, we hope to make it easier to compare and contrast approaches. We also hope that the modular organization of **bnpy-win** enables researchers to try out new modeling ideas without reinventing the wheel.
